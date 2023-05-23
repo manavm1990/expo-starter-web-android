@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@testing-library/jest-native": "^5.4.2",
+    "@testing-library/react-native": "^12.1.2",
     "@typescript-eslint/eslint-plugin": "^5.59.6",
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
@@ -38,6 +40,12 @@
     "eslint-plugin-use-encapsulation": "^1.1.0",
     "prettier": "2.8.8",
     "typescript": "^5.0.4"
+  },
+  "jest": {
+    "preset": "react-native",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
   },
   "private": true,
   "overrides": {
